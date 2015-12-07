@@ -1,0 +1,79 @@
+###-------------------------------------------------
+### Input parameter file for 
+###
+###       Topological
+###        Data
+###         Analysis
+###
+### TDA is licensed from Duke University.
+### Copyright (c) 2012-14 by John Harer.
+### All rights reserved.
+###
+### Settings file consistent with version 0.0.10
+###-------------------------------------------------
+
+###-------------------------------------------------
+### Project information
+###-------------------------------------------------
+
+project =             computational topology sandbox
+user =                                          test
+dataset =             	   one of the test data sets
+notes =          
+
+
+###-------------------------------------------------
+### Mode(s) selection
+###-------------------------------------------------
+
+applicationMode =          standAlone  #    standAlone  #     api
+
+###-------------------------------------------------
+### Task and Algorithm selection
+###-------------------------------------------------
+
+#taskChoice =                                M12
+
+###-------------------------------------------------
+### Algorithm component specifications
+###-------------------------------------------------
+
+supplyDataAs =     pointCloud  # sparseMatrix   #   distanceMatrix
+switchToSparseAt = 5000
+
+# for creating set of edges from point cloud (M12 alg.)
+distanceBoundOnEdges =		                
+pointCloudFile =                           
+
+
+
+convertDataToSparseMatrixFormat = # yes
+sparseMatrixOutputFile =  # sparseMatrix_@TS@.txt
+
+
+###-------------------------------------------------
+### Metric selection
+###-------------------------------------------------
+
+metricChoice =                                    L2
+p_valueForLpMetric =                               2
+
+
+###-------------------------------------------------
+### Diagram related output
+###-------------------------------------------------
+
+#pythonPlotCommandsFile = 
+0DintervalsFile =               0Dintervals.@TS@.txt
+1DintervalsFile =               1Dintervals.@TS@.txt
+1DdiagramFile =                       1Dpic.@TS@.png
+
+
+###-------------------------------------------------
+### Input and output locations
+###-------------------------------------------------
+
+inputDirectory =                    data/floor/input2
+outputDirectory =                  data/floor/output
+reportFile =          results_locSphDistMat.@TS@.txt
+
